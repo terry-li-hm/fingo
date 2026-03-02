@@ -13,7 +13,9 @@ use error::AppError;
 use keychain::{mask_api_key, read_api_key_from_keychain, save_api_key_to_keychain};
 use models::list_image_models;
 
-const DEFAULT_GEN_MODEL: &str = "gemini-2.0-flash-exp-image-generation";
+// Gen: NB2 (Flash-tier, Mar 2026) — newer generation than gemini-2.0-flash-exp, same speed.
+// Edit: NB Pro — quality over speed; NB2 is faster but Pro is still the better tier for edits.
+const DEFAULT_GEN_MODEL: &str = "gemini-3.1-flash-image-preview";
 const DEFAULT_EDIT_MODEL: &str = "nano-banana-pro-preview";
 const DEFAULT_OUTPUT: &str = "./fingo-out.png";
 
