@@ -4,7 +4,7 @@ version = "0.1.1"
 edition = "2024"
 description = "AI image generation and editing CLI powered by Google Nano Banana / Gemini"
 license = "MIT"
-repository = "https://github.com/terryli710/fingo"
+repository = "https://github.com/terry-li-hm/fingo"
 keywords = ["ai", "image", "gemini", "inpainting", "cli"]
 categories = ["command-line-utilities", "multimedia::images"]
 
