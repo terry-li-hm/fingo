@@ -15,7 +15,7 @@ use models::list_image_models;
 
 const DEFAULT_GEN_MODEL: &str = "gemini-2.0-flash-exp-image-generation";
 const DEFAULT_EDIT_MODEL: &str = "nano-banana-pro-preview";
-const DEFAULT_OUTPUT: &str = "./fingo-out.jpg";
+const DEFAULT_OUTPUT: &str = "./fingo-out.png";
 
 #[derive(Parser, Debug)]
 #[command(name = "fingo", about = "Gemini image generation and editing CLI")]

@@ -1,6 +1,6 @@
 [package]
 name = "fingo"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 description = "AI image generation and editing CLI powered by Google Nano Banana / Gemini"
 license = "MIT"
