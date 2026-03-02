@@ -1,6 +1,6 @@
 [package]
 name = "fingo"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "AI image generation and editing CLI powered by Google Nano Banana / Gemini"
 license = "MIT"
@@ -8,4 +8,17 @@ repository = "https://github.com/terryli710/fingo"
 keywords = ["ai", "image", "gemini", "inpainting", "cli"]
 categories = ["command-line-utilities", "multimedia::images"]
 
+[workspace]
+
 [dependencies]
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+ureq = { version = "3", features = ["json"] }
+base64 = "0.22"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
